@@ -25,9 +25,8 @@ export const apiGetBookingInfo = async (id) => {
   return data;
 };
 
-
 export const apiGetComment = async () => {
-  const { data } = await axiosClient.get("/binh-luan",);
+  const { data } = await axiosClient.get("/binh-luan");
   return data;
 };
 
