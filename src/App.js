@@ -2,12 +2,13 @@ import { lazy, Suspense } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import MainLayout from "./layouts/MainLayout/MainLayout";
 import Loading from "./components/Loading/Loading";
-import Signin from "./modules/Auth/Signin/Signin"
-import Signup from "./modules/Auth/Signup/Signup"
 import AuthLayoutout from "./layouts/AuthLayout/AuthLayout"
 import ProtectedRoute from "./routes/ProtectedRoute"
-import Booking from "./modules/Booking/Booking.jsx"
 
+
+const Booking = lazy(() => import("./modules/Booking/Booking.jsx"));
+const Signin = lazy(() => import("./modules/Auth/Signin/Signin"));
+const Signup = lazy(() => import("./modules/Auth/Signup/Signup"));
 const Home = lazy(() => import("./modules/Home/Home"));
 const RoomDetails = lazy(() => import("./modules/RoomDetails/RoomDetails"));
 function App() {
