@@ -1,0 +1,16 @@
+.wrapRoot{
+    
+  background-color: #edf2f9;
+  .rootAdmin{
+      display: flex;
+      min-width: 100%;
+      width: 100%;
+      min-height: 100vh;
+      height: 100%;
+      
+      .content{
+          width: 100%;
+      }
+  
+  }
+}

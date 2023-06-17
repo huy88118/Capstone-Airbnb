@@ -1,0 +1,36 @@
+.wrapAccess{
+  background-color: #edf2f9;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .access{
+      width: 70%;
+      display: flex;
+      align-items: center;
+      
+      justify-content: space-between;
+      .title{
+          text-align: center;
+          h1{
+              font-size: 50px;
+              color: #fff;
+              text-shadow: 0 5px 5px #ff5a5f;
+              font-weight: 800;
+          }
+          h2{
+              font-size: 40px;
+              color: #ff5a5f;
+          }
+          p{
+              font-size: 25px;
+              font-weight: 500;
+          }
+      }
+
+      .login{
+          margin: 0 auto;
+          width: 50%;
+      }
+  }
+}

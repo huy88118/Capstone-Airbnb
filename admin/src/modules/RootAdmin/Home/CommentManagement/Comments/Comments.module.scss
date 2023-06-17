@@ -1,0 +1,100 @@
+.wrapComments{
+    
+  .actionEdit{
+      display: flex;
+      justify-content: space-between;
+      .saveEdit{
+          cursor: pointer;
+          margin-right: 10px;
+          &:hover{
+              color: rgb(38, 38, 232);
+          }
+      }
+      .cancelEdit{
+          cursor: pointer;
+
+          &:hover{
+              color: red;
+          }
+      }
+  }
+
+  .headerComments{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 12px 20px ;
+      border: 2px solid transparent;
+      margin: 10px 0 30px;
+      border-radius: 10px;
+      background-color: #fff;
+      .search{
+          border: 2px solid black;
+          border-radius: 15px;
+          padding: 5px;
+          &:hover{
+              border-color: #ff385c;
+            }
+          input{
+              border: none;
+              padding: 5px 10px;
+              width: 85%;
+          }
+          span{
+              margin: 5px;
+              cursor: pointer;
+              svg{
+                  font-size: 20px;
+              }
+          }
+      }
+  }
+  .action{
+      display: flex;
+      .iconEdit{
+          width: 28px;
+          height: 28px;
+          border: 1px solid black;
+          border-radius: 5px;
+          text-align: center;
+          line-height: 23px;
+          cursor: pointer;
+          margin: 0 5px;
+          font-size: 20px;
+          &:hover{
+              color: rgb(59, 195, 59);
+              background-color: white;
+              border-color: rgb(59, 195, 59);
+          }
+      }
+      .iconDelete{
+          width: 28px;
+          height: 28px;
+          border: 1px solid black;
+          border-radius: 5px;
+          text-align: center;
+          line-height: 23px;
+          cursor: pointer;
+          margin: 0 5px;
+          font-size: 20px;
+          &:hover{
+              color: rgb(248, 111, 111);
+              background-color: white;
+              border-color: rgb(248, 111, 111);
+          }
+      }
+  }
+
+  .input{
+      input{
+          width: 100%;
+          border: 1px solid black;
+          padding: 2px;
+          border-radius: 10px;
+      }
+      .txtError{
+          color: red;
+          font-size: 12px;
+      }
+  }
+}

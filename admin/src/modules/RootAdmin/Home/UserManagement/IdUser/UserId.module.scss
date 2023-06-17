@@ -1,0 +1,66 @@
+.wrapDetailUser {
+  .headerDetailUser {
+    padding: 12px 20px;
+    border: 2px solid transparent;
+    margin: 10px 0 ;
+    border-radius: 10px;
+    background-color: #fff;
+    h4 {
+      margin: 0;
+    }
+  }
+
+  .contentInfoUser {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 10px 0;
+    .title {
+        h3{
+            margin: 0;
+        }
+    }
+    .avatarUser {
+      text-align: center;
+      
+      img {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        border: 1px solid #000;
+      }
+
+      .notAvatar{
+        margin: 0 auto;
+        width: 200px;
+        height: 200px;
+        text-align: center;
+        line-height: 130px;
+        border: 1px solid transparent;
+        border-radius: 50%;
+        background: rgb(216, 211, 211);
+        color: white;
+        font-size: 130px;
+      }
+    }
+    
+    .infoUser {
+        padding-top: 20px;
+    }
+  }
+
+  .bookingUser{
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    max-height: 375px;
+    height: 100%;
+    
+    .title {
+      h3{
+          margin: 0;
+      }
+  }
+
+  }
+}

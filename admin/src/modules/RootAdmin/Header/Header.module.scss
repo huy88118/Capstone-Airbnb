@@ -1,0 +1,41 @@
+.wrapHeader{
+  background-color: #edf2f9;
+  // min-width: 81vw;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+
+  .content{
+      display: flex;
+      align-items: center;
+
+      .iconBell{
+          margin: 0 10px 3px;
+          font-size: 25px;
+          cursor: pointer;
+      }
+      .account{
+          display: flex;
+          align-items: center;
+          padding: 5px;
+          margin: 5px 15px ;
+          border: 1px solid gray;
+          border-radius: 10px;
+          box-shadow: 0 0 5px rgb(200, 199, 199);
+          cursor: pointer;
+          .iconAccount{
+              width: 25px;
+              height: 25px;
+              text-align: center;
+              line-height: 20px;
+              border: 1px solid black;
+              border-radius: 50%;
+              margin-right: 10px;
+          }
+          p{
+              margin: 0;
+              font-size: 14px;
+          }
+      }
+  }
+}

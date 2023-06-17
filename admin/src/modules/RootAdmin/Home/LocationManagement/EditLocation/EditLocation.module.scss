@@ -1,0 +1,82 @@
+.formEditLocation {
+  padding: 30px 30px;
+  .input {
+    label {
+      display: block;
+      text-align: left;
+      margin-bottom: 10px;
+      font-weight: 600;
+      font-size: 17px;
+      color: #000;
+
+      @media screen and (max-width: 500px) {
+        font-size: 14px;
+      }
+    }
+    input {
+      width: 100%;
+      padding: 10px;
+      border-radius: 10px;
+      border: 2px solid black;
+      color: #000;
+      &:focus {
+        border-color: #ff5a5f;
+      }
+      @media screen and (max-width: 500px) {
+        font-size: 14px;
+        padding: 8px;
+      }
+    }
+
+    .txtError {
+      font-size: 14px;
+      color: red;
+      text-align: left;
+      transform: translateX(5%);
+      margin: 0;
+      p {
+        width: 100%;
+      }
+    }
+  }
+
+  .btn {
+    text-align: center;
+    padding: 100px 0 20px;
+    font-size: 20px;
+    button {
+      letter-spacing: 2px;
+      width: 50%;
+      padding: 15px;
+      font-weight: 600;
+      color: #ff5a5f;
+      background-color: #fff;
+      border-radius: 20px;
+      border: 2px solid rgb(255, 0, 0);
+      &:hover {
+        color: #fff;
+        background-color: #ff5a5f;
+      }
+    }
+  }
+
+  .btnDeleteImgLocation{
+      display: flex;
+      align-items: flex-end;
+      height: 100%;
+      button{
+      letter-spacing: 2px;
+      width: 50%;
+      padding: 10px;
+      font-weight: 600;
+      color: red;
+      background-color: #fff;
+      border-radius: 10px;
+      border: 2px solid red;
+      &:hover {
+        color: #fff;
+        background-color: red;
+      }
+      }
+  }
+}

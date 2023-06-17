@@ -1,0 +1,121 @@
+.wrapRegister {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+
+  .register {
+    max-width: 60%;
+    width: 100%;
+    border: 3px solid #ff5a5f;
+    border-radius: 30px;
+    padding: 20px 30px;
+    box-shadow: 0px 0px 10px #ff5a5f;
+    background-color: #fff;
+
+    .title {
+      margin-bottom: 20px;
+      .iconRegister {
+        margin: 0 auto;
+        width: 50px;
+        height: 50px;
+        border: 3px solid #ff5a5f;
+        border-radius: 50%;
+        color: #ff5a5f;
+        background-color: #fff;
+        line-height: 35px;
+        font-size: 30px;
+        text-align: center;
+        box-shadow: 0px 0px 10px #ff5a5f;
+      }
+      h1 {
+        margin: 5px 0 0;
+        color: #ff5a5f;
+      }
+    }
+
+    .formRegister {
+      .inputRegister {
+        margin-bottom: 5px;
+        width: 100%;
+        label {
+          display: block;
+          width: 100%;
+          text-align: left;
+          margin-bottom: 10px;
+          margin-left: 20px;
+          font-weight: 600;
+          font-size: 17px;
+          color: #000;
+          margin: 0;
+          @media screen and (max-width: 500px) {
+            font-size: 14px;
+          }
+        }
+        input {
+          width: 100%;
+          padding: 10px;
+          border-radius: 10px;
+          border: 2px solid black;
+          color: #000;
+          &:focus {
+            border-color: #ff5a5f;
+          }
+          @media screen and (max-width: 500px) {
+            font-size: 14px;
+            padding: 8px;
+          }
+        }
+        select {
+          width: 100%;
+          padding: 10px;
+          border-radius: 10px;
+          border: 2px solid black;
+          &:focus {
+            border-color: #ff5a5f;
+          }
+        }
+
+        .txtError {
+          font-size: 14px;
+          color: red;
+          text-align: left;
+          transform: translateX(5%);
+          margin: 0;
+          p {
+            width: 100%;
+          }
+        }
+      }
+
+      .btn {
+        margin: 30px 0 20px;
+        font-size: 20px;
+        button {
+          width: 100%;
+          padding: 15px;
+          font-weight: 600;
+          color: #ff5a5f;
+          background-color: #fff;
+          border-radius: 20px;
+          border: 2px solid rgb(255, 0, 0);
+          &:hover {
+            color: #fff;
+            background-color: #ff5a5f;
+          }
+        }
+      }
+      .feature{
+        text-align: right;
+        p{
+          margin: 0;
+          color: rgb(66, 66, 235);
+          cursor: pointer;
+          font-weight: 600;
+          letter-spacing: 1px;
+        }
+      }
+    }
+  }
+}

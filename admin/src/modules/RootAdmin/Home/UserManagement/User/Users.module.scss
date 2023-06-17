@@ -1,0 +1,90 @@
+
+.wrapUsers{
+  .headerUser{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 12px 20px ;
+      border: 2px solid transparent;
+      margin: 10px 0 30px;
+      border-radius: 10px;
+      background-color: #fff;
+      h4{
+          margin: 0;
+      }
+      .search{
+          border: 2px solid black;
+          border-radius: 15px;
+          padding: 5px;
+          font-size: 15px;
+          width: 25%;
+          &:hover{
+              border-color: #ff385c;
+            }
+          input{
+              border: none;
+              padding: 5px 10px;
+              width: 88%;
+          }
+          span{
+              margin: 5px;
+              cursor: pointer;
+              svg{
+                  font-size: 20px;
+              }
+          }
+      }
+  }
+}
+
+.action{
+  display: flex;
+  .iconEdit{
+      width: 28px;
+      height: 28px;
+      border: 1px solid black;
+      border-radius: 5px;
+      text-align: center;
+      line-height: 23px;
+      cursor: pointer;
+      margin: 0 5px;
+      font-size: 20px;
+      &:hover{
+          color: rgb(59, 195, 59);
+          background-color: white;
+          border-color: rgb(59, 195, 59);
+      }
+  }
+  .iconDelete{
+      width: 28px;
+      height: 28px;
+      border: 1px solid black;
+      border-radius: 5px;
+      text-align: center;
+      line-height: 23px;
+      cursor: pointer;
+      margin: 0 5px;
+      font-size: 20px;
+      &:hover{
+          color: rgb(248, 111, 111);
+          background-color: white;
+          border-color: rgb(248, 111, 111);
+      }
+  }
+  .iconDetailUser{
+      width: 28px;
+      height: 28px;
+      border: 1px solid black;
+      border-radius: 5px;
+      text-align: center;
+      line-height: 23px;
+      cursor: pointer;
+      margin: 0 5px;
+      font-size: 20px;
+      &:hover{
+          color: rgb(243, 224, 24);
+          background-color: white;
+          border-color: rgb(243, 224, 24);
+      }
+  }
+}
