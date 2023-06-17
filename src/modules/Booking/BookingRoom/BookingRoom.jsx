@@ -26,53 +26,68 @@ function BookingRoom({ id }) {
         if (item.id.toString() === id) {
           return (
             <div key={item.id}>
-              <h2>Phòng {item.tenPhong}</h2>
+              <h2 className={styles.tenPhong}>Phòng {item.tenPhong}</h2>
               <img className={styles.imgRoom} src={item.hinhAnh} alt="id" />
 
-              <div className="d-flex justify-content-between col-9 mt-5">
-                <div>
-                  <div className={styles.text}>
-                    <p> Tổng số khách: {item.khach}</p>
-                    <p>Số phòng ngủ : {item.phongNgu}</p>
-                    <p>Phòng tắm {item.phongTam}</p>
+              <div className=" container d-flex mt-3">
+                <div className="col-5">
+                
+                {/* Mô tả : */}
+                <p className={styles.textMoTa}>{item.moTa}</p>
+                  <div className={styles.chiTietPhong}>
+                    <h3>Chi tiết phòng</h3>
+                    <ul>
+                      <li>Số khách: {item.khach}</li>
+                      <li>Số phòng ngủ : {item.phongNgu}</li>
+                      <li>Phòng tắm : {item.phongTam}</li>
+                    </ul>
                   </div>
-                  <h3>Các tiện ích dành cho bạn :</h3>
+
                   <div className={styles.tienIch}>
-                    <p> {item.banLa && <span>Bàn là</span>}</p>
-                    <p> {item.mayGiat && <span>Máy giặt</span>}</p>
-                    <p> {item.tivi && <span>Tivi</span>}</p>
-                    <p> {item.dieuHoa && <span>Điều hòa</span>}</p>
-                    <p> {item.wifi && <span>Wifi</span>}</p>
-                    <p>{item.bep && <span>Bếp</span>}</p>
-                    <p> {item.doXe && <span>Chổ đậu xe</span>}</p>
-                    <p> {item.hoBoi && <span>Hồ bơi</span>}</p>
-                    <p>{item.banUi && <span>Bàn ủi</span>}</p>
-                    <p className={styles.text}>Mô tả :{item.moTa}</p>
-                    <h2>Giá thuê : ${item.giaTien}</h2>
+                    <h3>Các tiện ích </h3>
+
+                    <ul>
+                    <span> {item.banLa && <li>Bàn là</li>}</span>
+                    <span> {item.mayGiat && <li>Máy giặt</li>}</span>
+                    <span> {item.tivi && <li>Tivi</li>}</span>
+                    <span> {item.dieuHoa && <li>Điều hòa</li>}</span>
+                  <span> {item.wifi && <li>Wifi</li>}</span>
+                    <span>{item.bep && <li>Bếp</li>}</span>
+                    <span> {item.doXe && <li>Chổ đậu xe</li>}</span>
+                    <span> {item.hoBoi && <li>Hồ bơi</li>}</span>
+                    <span>{item.banUi && <li>Bàn ủi</li>}</span>
+                    </ul>
+                   
+                   
+                    
+                  </div>
+                 
+                </div>
+                <div className="col-4">
+                  <div className={styles.styleBooking}>
+                    <h2>Đặt phòng ngay</h2>
+                    <div className={styles.text}>
+                      <span>
+                        <p>Ngày đến</p>
+                        <input placeholder="Ngày đến" type="date" />
+                      </span>
+
+                      <span>
+                        {" "}
+                        <p>Ngày đi</p>
+                        <input placeholder="Ngày đi" type="date" />
+                      </span>
+                      <span>
+                        {" "}
+                        <p>Số lượng khách</p>
+                        <input placeholder="Số lượng khách" type="number" />
+                      </span>
+                      <button className=" mt-1 btn btn-primary">Đặt phòng</button>
+                    </div>
+                    <div className={styles.giaThue}> <h2>Giá thuê : ${item.giaTien}</h2></div>
                   </div>
                 </div>
 
-                <div className="ps-5 col-3 ">
-                  <h2>Đặt phòng ngay</h2>
-                  <table className={styles.text}>
-                    <span>
-                      <p>Ngày đến</p>
-                      <input placeholder="Ngày đến" type="date" />
-                    </span>
-
-                    <span>
-                      {" "}
-                      <p>Ngày đi</p>
-                      <input placeholder="Ngày đi" type="date" />
-                    </span>
-                    <span>
-                      {" "}
-                      <p>Số lượng khách</p>
-                      <input placeholder="Số lượng khách" type="number" />
-                    </span>
-                    <button className=" mt-1 btn btn-primary">Đặt phòng</button>
-                  </table>
-                </div>
               </div>
             </div>
           );
