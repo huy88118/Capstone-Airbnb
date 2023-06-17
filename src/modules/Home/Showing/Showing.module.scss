@@ -1,0 +1,86 @@
+
+.container{
+  margin: auto;
+}
+.mySwiper {
+    width: 80%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 80px;
+  }
+  
+  .RoomDetails {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    // height: calc((35% - 30px) / 2) !important;
+  
+    // /* Center slide text vertically */
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
+  }
+  
+  .bannerImg {
+    height: 220px;
+    width: 220px;
+    object-fit: cover;
+    border-radius: 5px;
+  }
+
+  .fontSize{
+    font-size: 14px;
+    color: #757575;
+  }
+
+  .tenTinh{
+    color: #000;
+    font-size: 18px;
+    max-height: 45px;
+    visibility: visible;
+    font-weight: 500;
+    text-align: center;
+    text-overflow: ellipsis;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+  }
+
+  .button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0 35px 10px;
+    font-size: 15px;
+  
+    button {
+      padding: 10px;
+      border: none;
+      border-radius: 4px;
+      margin-right: 5px;
+      cursor: pointer;
+      transition: all 0.3s ease-in-out;
+  
+      &:last-child {
+        margin-right: 0;
+      }
+  
+      &.choseRoom {
+        background-color: #f37335;
+        color: #fff;
+        margin-right: 10px;
+  
+        &:hover {
+          background-color: #fff;
+          color: #f37335;
+          border: 1px solid #f37335;
+        }
+      }
+  
+      &:hover:not(.choseRoom) {
+        background-color: #f37335;
+        color: #fff;
+      }
+    }
+  }
+  

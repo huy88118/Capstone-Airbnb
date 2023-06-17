@@ -1,0 +1,87 @@
+.OverView{
+  padding: 40px 0 20px 0;
+  background-color: rgb(10 32 41);
+  color: white;
+  margin: 30px 200px 50px 200px ;
+  border-radius: 20px;
+  .OverViewContent{
+      display: flex;
+      justify-content: center;
+
+      @media screen and (max-width: 468px) {
+          h1{
+              font-size: 20px;
+          }
+          p {
+              font-size: 12px;
+              margin-bottom: 4px;
+          }
+      }
+
+      .ImgRoom{
+          width: 100%;
+          // height: 100%;
+          img{
+              width: 100%;
+              height: 300px;
+              border: 1px solid black;
+              border-radius: 10px;
+
+              @media screen and (max-width: 992px) {
+                  height: 400px;
+              }
+              @media screen and (max-width: 768px) {
+                  height: 350px;
+              }
+              @media screen and (max-width: 480px) {
+                  height: 300px;
+              }
+          }
+      }
+  }
+
+}
+
+.button {
+  
+  
+  align-items: center;
+  margin: 10px 0 35px;
+
+  button {
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    margin-right: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    &.buyTicket {
+      background-color: #f37335;
+      color: #fff;
+      margin-right: 10px;
+
+      &:hover {
+        background-color: #fff;
+        color: #f37335;
+        border: 1px solid #f37335;
+      }
+    }
+
+    &:hover:not(.buyTicket) {
+      background-color: #f37335;
+      color: #fff;
+    }
+  }
+}
+
+.tienIch{
+margin-top: 10px;
+  span{
+      margin: 0 5px 0 5px;
+    }
+}

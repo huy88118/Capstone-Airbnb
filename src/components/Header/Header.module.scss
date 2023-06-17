@@ -1,0 +1,79 @@
+$header-bg-color: rgba(255, 255, 255, 0.95);
+
+.header {
+  background-color: whitesmoke;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 5px 0 5px;
+  a {
+    text-decoration: none;
+    color: black;
+  }
+
+  &__logo {
+    width: 30%;
+    display: flex;
+    margin-top: 5px;
+    
+  }
+
+  &__menu {
+    display: flex;
+    width: 40%;
+    justify-content: center;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+    a {
+      margin-right: 20px;
+      text-decoration: none;
+      color: black;
+      h4 {
+        font-size: 20px;
+        &:hover {
+          color: blue;
+          transition: all 0.2s ease-in-out;
+        }
+      }
+    }
+  }
+
+  &__right {
+    margin-left: auto;
+    display: flex;
+
+    &--user {
+      margin-right: 10px;
+      margin-top: 10px;
+      font-weight: 550;
+      padding-top: 2px;
+    }
+  }
+}
+
+.button1 {
+  border-radius: 30px;
+  padding: 0 30px;
+  margin: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    color: #f37335;
+    border: 1px solid #f37335;
+  }
+}
+
+.button2 {
+  border-radius: 30px;
+  padding: 0 30px;
+  margin: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    color: #f37335;
+    border: 1px solid #f37335;
+  }
+}
