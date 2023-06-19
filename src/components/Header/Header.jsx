@@ -25,7 +25,11 @@ function Header() {
       <div className={styles.header}>
         <div className={styles.header__logo}>
           <Link to="/">
-            <img src="img/Airbnb_Logo_Bélo.svg.png" alt="" />
+            <img
+              style={{ width: "30%" }}
+              src="img/Airbnb_Logo_Bélo.svg.png"
+              alt=""
+            />
           </Link>
         </div>
         <div className={styles.header__menu}>
@@ -45,9 +49,9 @@ function Header() {
         <div className={styles.header__right}>
           {user ? (
             <>
-              <Avatar className={styles.avatar}>
+              <Avatar style={{ width: "45px", height: "45px" }}>
                 {" "}
-                <p style={{ fontSize: "30px", color: "black" }}>
+                <p style={{ fontSize: "40px", color: "black" }}>
                   {user.user.name}
                 </p>
               </Avatar>
