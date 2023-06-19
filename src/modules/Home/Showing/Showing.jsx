@@ -59,9 +59,7 @@ function Showing() {
                   {item.tinhThanh.substring(0, 20)}
                 </div>
                 <div>
-              
-                  <p className={styles.fontSize}>{item.tenViTri}</p>
-                 
+                  <p className={styles.viTri}>{item.tenViTri}</p>
                 </div>
                 <div className={styles.button}>
                   <button

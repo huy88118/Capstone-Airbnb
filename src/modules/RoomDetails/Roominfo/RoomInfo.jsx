@@ -46,17 +46,9 @@ function RoomInfo({ maViTri }) {
               </div>
               <div className="col-7" style={{ marginLeft: "50px" }}>
                 <div className="DetailRoom">
-                  <h1 style={{ fontSize: "25px", marginBottom: "20px" }}>
-                    {item.tenPhong}
-                  </h1>
+                  <h1>{item.tenPhong}</h1>
 
-                  <div
-                    style={{
-                      display: "flex",
-                      justifyContent: "space-between",
-                      width: "80%",
-                    }}
-                  >
+                  <div className={styles.chiTiet}>
                     <p>Số Lượng Khách: {item.khach}</p>
                     <p>phòng ngủ: {item.phongNgu}</p>
                     <p>giường: {item.giuong}</p>
@@ -67,7 +59,9 @@ function RoomInfo({ maViTri }) {
 
                   <p>Giá Tiền Thuê: {item.giaTien}</p>
                   <div className={styles.button}>
-                    <button   onClick={() => navigate(`/booking/${item.id}`)}>Chi tiết phòng</button>
+                    <button onClick={() => navigate(`/booking/${item.id}`)}>
+                      Chi tiết phòng
+                    </button>
                   </div>
                 </div>
               </div>

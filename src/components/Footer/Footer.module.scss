@@ -43,3 +43,22 @@ img{
 		
 }
 }
+
+@media screen and (max-width: 768px) {
+	.logo{
+		margin: 0px 0 0 100px;
+		display: flex;
+		justify-content: space-around;
+		width: 70%;
+	}
+}
+
+
+@media screen and (max-width: 420px) {
+	.logo{
+		margin: 0px 0 0 0px;
+		display: flex;
+		justify-content: space-around;
+		width: 100%;
+	}
+}
