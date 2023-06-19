@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { apiGetBookingInfo } from "../../../apis/locationAPI";
 import styles from "./BookingRoom.module.scss";
+import Swal from 'sweetalert2';
 
 function BookingRoom({ id }) {
   const [locations, setLocations] = useState([]);
@@ -20,8 +21,16 @@ function BookingRoom({ id }) {
   }, []);
 
   if (error) return null;
+
+  const handleClick = () => {
+    Swal.fire(
+      'Đặt phòng thành công!',
+      '',
+      'success'
+    )
+  }
   return (
-    <div className={styles.bg}>
+    <div>
       {locations.map((item) => {
         if (item.id.toString() === id) {
           return (
@@ -31,9 +40,9 @@ function BookingRoom({ id }) {
 
               <div className=" container d-flex mt-3">
                 <div className="col-5">
-                
-                {/* Mô tả : */}
-                <p className={styles.textMoTa}>{item.moTa}</p>
+
+                  {/* Mô tả : */}
+                  <p className={styles.textMoTa}>{item.moTa}</p>
                   <div className={styles.chiTietPhong}>
                     <h3>Chi tiết phòng</h3>
                     <ul>
@@ -47,21 +56,21 @@ function BookingRoom({ id }) {
                     <h3>Các tiện ích </h3>
 
                     <ul>
-                    <span> {item.banLa && <li>Bàn là</li>}</span>
-                    <span> {item.mayGiat && <li>Máy giặt</li>}</span>
-                    <span> {item.tivi && <li>Tivi</li>}</span>
-                    <span> {item.dieuHoa && <li>Điều hòa</li>}</span>
-                  <span> {item.wifi && <li>Wifi</li>}</span>
-                    <span>{item.bep && <li>Bếp</li>}</span>
-                    <span> {item.doXe && <li>Chổ đậu xe</li>}</span>
-                    <span> {item.hoBoi && <li>Hồ bơi</li>}</span>
-                    <span>{item.banUi && <li>Bàn ủi</li>}</span>
+                      <span> {item.banLa && <li>Bàn là</li>}</span>
+                      <span> {item.mayGiat && <li>Máy giặt</li>}</span>
+                      <span> {item.tivi && <li>Tivi</li>}</span>
+                      <span> {item.dieuHoa && <li>Điều hòa</li>}</span>
+                      <span> {item.wifi && <li>Wifi</li>}</span>
+                      <span>{item.bep && <li>Bếp</li>}</span>
+                      <span> {item.doXe && <li>Chổ đậu xe</li>}</span>
+                      <span> {item.hoBoi && <li>Hồ bơi</li>}</span>
+                      <span>{item.banUi && <li>Bàn ủi</li>}</span>
                     </ul>
-                   
-                   
-                    
+
+
+
                   </div>
-                 
+
                 </div>
                 <div className="col-4">
                   <div className={styles.styleBooking}>
@@ -82,9 +91,10 @@ function BookingRoom({ id }) {
                         <p>Số lượng khách</p>
                         <input placeholder="Số lượng khách" type="number" />
                       </span>
-                      <button className=" mt-1 btn btn-primary">Đặt phòng</button>
+                      <button onClick={handleClick}
+                        className=" mt-1 btn btn-primary">Đặt phòng</button>
                     </div>
-                    <div className={styles.giaThue}> <h2>Giá thuê : ${item.giaTien}</h2></div>
+                    <div className={styles.giaThue}> <h2>Giá thuê  : ${item.giaTien}</h2></div>
                   </div>
                 </div>
 
