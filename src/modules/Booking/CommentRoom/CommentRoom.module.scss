@@ -1,18 +1,29 @@
 .comment {
- margin-top: 25px;
  margin-left: 25px;
+ font-size: 13px;
+//  display: flex;
+//  justify-content: start;
 }
 .binhLuan {
     padding: 15px;
-    border-radius: 15px;
+    border-radius: 40px 0 450px/120px;
     background-color: #80808059;
     margin-top: 10px;
+    margin-right: 50px;
     
 }
 .commentId {
-    font-size: 25px;
+    font-size: 15px;
     
 }
 .commentP {
     color: red;
+}
+
+.background{
+    background-image: url(../../../../public/img/background-du-lich-bau-troi_110850711.jpg);
+    box-sizing: border-box;
+    object-fit: cover;
+    background-size: cover;
+    margin: 25px 0;
 }
