@@ -41,9 +41,38 @@ width: 100%;
    margin-left: 25%;
    margin-top: 40%;
      p{
+        
         margin: 0;
-    }
+     }
     
+     @media screen and (max-width: 468px) {
+        margin-left: 15%;
+        margin-right: 10px;
+     
+         }
+}
+
+.giaThue {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 30px;
+    padding:15px;
+    border-radius: 10px 100px / 120px;
+    background-color: #fd145a;
+    color: white;
+    box-shadow:5px 5px 10px gray; 
+
+    @media screen and (max-width: 468px) {
+   h2 {
+    font-size: 20px;
+    margin-top: 10px;
+    padding:5px;   
+   
+   }       
+    
+       
+
+    }
 }
 
 .chiTietPhong {
@@ -71,13 +100,3 @@ width: 100%;
     box-shadow:5px 5px 10px gray; 
 }
 
-.giaThue {
-    margin-top: 20px;
-    text-align: center;
-    font-size: 30px;
-    padding:15px;
-    border-radius: 10px 100px / 120px;
-    background-color: #fd145a;
-    color: white;
-    box-shadow:5px 5px 10px gray; 
-}

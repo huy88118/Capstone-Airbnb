@@ -63,7 +63,7 @@ function BookingRoom({ id }) {
                     </ul>
                   </div>
                 </div>
-                <div className="col-4">
+                <div className="">
                   <div className={styles.styleBooking}>
                     <h2>Đặt phòng ngay</h2>
                     <div className={styles.text}>
